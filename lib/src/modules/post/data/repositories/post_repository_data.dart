@@ -10,9 +10,9 @@ import 'package:clean_arquitecture/src/modules/post/domain/repositories/post_rep
 import 'package:fpdart/src/either.dart';
 
 class PostRepositoryData extends IPostRepository {
-  final UserDatasource userDatasource;
-  final CommentDatasource commentDatasource;
-  final PostDatasource postDatasource;
+  final IUserDatasource userDatasource;
+  final ICommentDatasource commentDatasource;
+  final IPostDatasource postDatasource;
 
   PostRepositoryData(
       this.userDatasource, this.commentDatasource, this.postDatasource);

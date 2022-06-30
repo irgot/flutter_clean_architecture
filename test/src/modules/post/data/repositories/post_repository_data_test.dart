@@ -11,16 +11,16 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:mocktail/mocktail.dart';
 
-class UserDatasourceMock extends Mock implements UserDatasource {}
+class UserDatasourceMock extends Mock implements IUserDatasource {}
 
-class PostDatasourceMock extends Mock implements PostDatasource {}
+class PostDatasourceMock extends Mock implements IPostDatasource {}
 
-class CommentDatasourceMock extends Mock implements CommentDatasource {}
+class CommentDatasourceMock extends Mock implements ICommentDatasource {}
 
 void main() {
-  final UserDatasource userDatasource = UserDatasourceMock();
-  final PostDatasource postDatasource = PostDatasourceMock();
-  final CommentDatasource commentDatasource = CommentDatasourceMock();
+  final IUserDatasource userDatasource = UserDatasourceMock();
+  final IPostDatasource postDatasource = PostDatasourceMock();
+  final ICommentDatasource commentDatasource = CommentDatasourceMock();
   final repository =
       PostRepositoryData(userDatasource, commentDatasource, postDatasource);
 

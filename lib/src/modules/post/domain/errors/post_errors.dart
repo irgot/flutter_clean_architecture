@@ -6,5 +6,9 @@ abstract class IPostErrors {
 }
 
 class ArgumentsException extends IPostErrors {
-  ArgumentsException({required super.message});
+  ArgumentsException({required super.message, super.stackTrace});
+}
+
+class DataSourceException extends IPostErrors {
+  DataSourceException({required super.message, super.stackTrace});
 }

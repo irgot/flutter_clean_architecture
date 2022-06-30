@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "server": "json-server --host localhost db.json"
+    "server": "json-server --host 192.168.15.26 db.json"
   },
   "keywords": [],
   "author": "",

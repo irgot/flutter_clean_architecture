@@ -1,3 +1,3 @@
-abstract class PostDatasource {
+abstract class IPostDatasource {
   Future<List> getPosts();
 }

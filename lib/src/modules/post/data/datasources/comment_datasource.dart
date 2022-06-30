@@ -1,3 +1,3 @@
-abstract class CommentDatasource {
+abstract class ICommentDatasource {
   Future<List> getComments();
 }

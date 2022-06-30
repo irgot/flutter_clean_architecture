@@ -1,3 +1,3 @@
-abstract class UserDatasource {
+abstract class IUserDatasource {
   Future<List> getUsers();
 }
